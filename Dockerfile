@@ -21,7 +21,7 @@ RUN pip install okpy
 RUN pip install dpkt
 
 RUN conda install -y numpy==1.12.1
-RUN conda install -y pandas==0.19.2
+RUN conda install -y pandas==0.23.4
 RUN conda install -y pypandoc
 RUN conda install -y scipy==0.19.0
 RUN conda install -y statsmodels==0.8.0
