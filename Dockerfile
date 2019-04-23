@@ -44,6 +44,7 @@ RUN conda install --quiet --yes \
 
 RUN conda install --quiet --yes \
 		nltk
+RUN python -m nltk.downloader -d /opt/conda/share/nltk_data all
 
 # Pregenerate matplotlib cache
 RUN python -c 'import matplotlib.pyplot'
