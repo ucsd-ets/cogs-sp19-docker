@@ -42,6 +42,9 @@ RUN conda install --quiet --yes \
             sqlalchemy \
             sympy
 
+RUN conda install --quiet --yes \
+		nltk
+
 # Pregenerate matplotlib cache
 RUN python -c 'import matplotlib.pyplot'
 
